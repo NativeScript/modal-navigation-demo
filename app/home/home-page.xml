@@ -1,0 +1,8 @@
+<Page>
+    <ActionBar>
+        <Label text="Home"></Label>
+    </ActionBar>
+    <StackLayout>
+        <Button text="Show Modal Page With Frame" tap="onModalFrame" />
+    </StackLayout>
+</Page>

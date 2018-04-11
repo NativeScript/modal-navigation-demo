@@ -1,0 +1,8 @@
+<Page>
+    <ActionBar>
+        <Label text="Modal Second"></Label>
+    </ActionBar>
+    <StackLayout>
+        <Button text="Close Modal" tap="onCloseModal" />
+    </StackLayout>
+</Page>
