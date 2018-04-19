@@ -11,5 +11,5 @@ export function onModalFrame(args: EventData) {
     page.showModal(frame,
         "context",
         () => console.log("home-page modal frame closed"),
-        true);
+        false);
 }
