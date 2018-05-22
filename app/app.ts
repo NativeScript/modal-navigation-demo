@@ -6,7 +6,7 @@ purpose of the file is to pass control to the app’s first module.
 
 import "./bundle-config";
 import * as application from 'application';
-import { NavigationEntry } from 'ui/frame';
+import { Frame, NavigationEntry } from 'ui/frame';
 import { ScrollView } from 'ui/scroll-view';
 import { TextView } from 'ui/text-view';
 import { TestPage } from './TestPage';
@@ -28,7 +28,17 @@ navigationEntry = {
   create: (() => { return page; })
 };
 
-application.start(navigationEntry);
+// Create root entry
+let rootEntry: NavigationEntry;
+rootEntry = {
+  create: (() => {
+    const frame = new Frame();
+    frame.navigate(navigationEntry);
+    return frame;
+  })
+};
+
+application.run(rootEntry);
 
 // application.run({ moduleName: 'app-root' });
 
