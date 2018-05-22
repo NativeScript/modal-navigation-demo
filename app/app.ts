@@ -20,6 +20,7 @@ let textView = new TextView();
 textView.text = 'Test text view';
 pageContent.content = textView;
 page.content = pageContent;
+(<any>page).scrollableContent = false;
 
 // Create navigation entry
 let navigationEntry: NavigationEntry;
