@@ -1,4 +1,4 @@
-<Page>
+<Page navigatedTo="onNavigatedTo">
     <ActionBar>
         <Label text="Modal Second"></Label>
     </ActionBar>

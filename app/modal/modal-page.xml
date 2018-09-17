@@ -1,8 +1,8 @@
-<Page backgroundColor="green">
+<Page backgroundColor="green" navigatedTo="onNavigatedTo">
     <ActionBar>
         <Label text="Modal"></Label>
     </ActionBar>
     <StackLayout backgroundColor="lightGreen">
-        <Button text="Navigate To Second Page" tap="onNavigate" />
+        <Button text="Navigate To Second Page" tap="onTap" />
     </StackLayout>
 </Page>
