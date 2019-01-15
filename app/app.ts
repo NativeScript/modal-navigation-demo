@@ -7,6 +7,12 @@ purpose of the file is to pass control to the app’s first module.
 import "./bundle-config";
 import * as application from 'application';
 
+application.android.on(application.AndroidApplication.activityBackPressedEvent, function (args) {
+    console.log(">>>>>>>>>>>>>>>>>>>>> activityBackPressedEvent <<<<<<<<<<<<<<<<<<<<<")
+    console.log("Event: " + args.eventName + ", Activity: " + args.activity);
+    // Set args.cancel = true to cancel back navigation and do something custom.
+});
+
 application.run({ moduleName: 'app-root' });
 
 /*

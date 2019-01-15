@@ -6,18 +6,15 @@
 	"nativescript": {
 		"id": "org.nativescript.modalnavigationdemo",
 		"tns-android": {
-			"version": "4.2.0"
-		},
-		"tns-ios": {
-			"version": "4.2.0"
+			"version": "5.1.0"
 		}
 	},
 	"dependencies": {
 		"nativescript-theme-core": "~1.0.4",
-		"tns-core-modules": "~4.2.0"
+		"tns-core-modules": "~5.1.1"
 	},
 	"devDependencies": {
-		"nativescript-dev-typescript": "~0.7.3",
-		"typescript": "~2.7.2"
+		"nativescript-dev-typescript": "~0.7.9",
+		"typescript": "~3.1.1"
 	}
 }
