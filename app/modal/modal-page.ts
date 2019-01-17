@@ -1,4 +1,4 @@
-import { Page, ShownModallyData, NavigatedData } from "tns-core-modules/ui/page";
+import { Page } from "tns-core-modules/ui/page";
 import { View, EventData } from "tns-core-modules/ui/core/view";
 
 export function onTap(args: EventData) {
@@ -10,6 +10,6 @@ export function onTap(args: EventData) {
     });
 }
 
-export function onNavigatedTo(args: NavigatedData) {
-    console.log("[modal-page] Context:", args.context);
+export function onNavigatedTo() {
+    console.log("[modal-page] navigated");
 }
